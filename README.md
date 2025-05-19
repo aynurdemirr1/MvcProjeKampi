@@ -83,6 +83,7 @@ Bu proje sayesinde hem teorik bilgileri pratiğe dökme hem de yazılım gelişt
 Aşağıda birkaç örnek görsel:
 
 ![Ekran görüntüsü 2025-05-19 113530](https://github.com/user-attachments/assets/ae2fdaef-d7fa-43e0-ac76-3bfb79c92154)
+![Ekran görüntüsü 2025-05-18 233326](https://github.com/user-attachments/assets/dfadac23-bb97-4646-8509-27d80ac95b78)
 ![Ekran görüntüsü 2025-05-18 233852](https://github.com/user-attachments/assets/c34121eb-6814-4e98-a2ce-1c16a60ce7a8)
 ![Ekran görüntüsü 2025-05-17 222814](https://github.com/user-attachments/assets/96b6b55c-723a-494c-a532-9ffcd9fb6748)
 ![Ekran görüntüsü 2025-05-18 232930](https://github.com/user-attachments/assets/03941d1f-e1ec-41ed-8f7c-a11c077b6a39)
@@ -91,6 +92,6 @@ Aşağıda birkaç örnek görsel:
 ![Ekran görüntüsü 2025-05-18 233011](https://github.com/user-attachments/assets/02469c33-171c-4c25-a6d0-78a372c3290f)
 ![Ekran görüntüsü 2025-05-18 233247](https://github.com/user-attachments/assets/034fd352-1463-4455-8a10-89ac1ba9fa12)
 ![Ekran görüntüsü 2025-05-18 233033](https://github.com/user-attachments/assets/4f982f4a-792c-46c5-a6f5-b0a1bd9fb39d)
-![Ekran görüntüsü 2025-05-18 233326](https://github.com/user-attachments/assets/dfadac23-bb97-4646-8509-27d80ac95b78)
+
 
 
