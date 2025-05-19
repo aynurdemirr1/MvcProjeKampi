@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Mvc Proje Kampı - Yazar Girişi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Özel CSS (Senin temandan) -->
+    <link rel="stylesheet" href="~/AdminLTE-3.0.4/login-form-20/css/style.css" />
+
+    <!-- Ionicons (Eksik olan bu) -->
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+</head>
+<body class="img js-fullheight" style="background-image: url('/AdminLTE-3.0.4/login-form-20/images/bg.jpg');">
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Mvc Proje Kampı Yazar Girişi</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="login-wrap p-0">
+                        <h3 class="mb-4 text-center">Bir Hesabın Var mı?</h3>
+                        @using (Html.BeginForm("WriterLogin", "Login", FormMethod.Post))
+                        {
+                            <div class="form-group">
+                                <input type="email" name="WriterMail" class="form-control" placeholder="Mail Adresin" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password-field" name="WriterPassword" class="form-control" placeholder="Şifreniz" required />
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Giriş Yap</button>
+                            </div>
+                            <div class="form-group d-md-flex">
+                                <div class="w-50">
+                                    <label class="checkbox-wrap checkbox-primary">
+                                        Beni Hatırla
+                                        <input type="checkbox" checked />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="w-50 text-md-right">
+                                    <a href="#" style="color: #fff">Şifremi Unuttum</a>
+                                </div>
+                            </div>
+                        }
+
+                        <p class="w-100 text-center text-white mt-4 mb-2">&mdash; Veya Sosyal Medya ile Giriş Yapın &mdash;</p>
+                        <div class="social d-flex text-center">
+                            <a href="#" class="px-2 py-2 mr-md-1 rounded text-white bg-primary">
+                                <i class="fab fa-facebook-f mr-2"></i>Facebook
+                            </a>
+                            <a href="#" class="px-2 py-2 ml-md-1 rounded text-white bg-info">
+                                <i class="fab fa-twitter mr-2"></i>Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="~/AdminLTE-3.0.4/login-form-20/js/jquery.min.js"></script>
+    <script src="~/AdminLTE-3.0.4/login-form-20/js/popper.js"></script>
+    <script src="~/AdminLTE-3.0.4/login-form-20/js/bootstrap.min.js"></script>
+    <script src="~/AdminLTE-3.0.4/login-form-20/js/main.js"></script>
+
+    <!-- Toggle password JS (Varsa temanda, yoksa ekle) -->
+    <script>
+        $(".toggle-password").click(function () {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+</body>
+</html>
